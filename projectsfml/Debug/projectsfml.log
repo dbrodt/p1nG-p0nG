@@ -1,0 +1,4 @@
+﻿  Paddle.cpp
+C:\Users\HP\Desktop\project\projectsfml\projectsfml\Paddle.h(17,60): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\HP\Desktop\project\projectsfml\projectsfml\Paddle.h(17,57): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+  projectsfml.vcxproj -> C:\Users\HP\Desktop\project\projectsfml\Debug\projectsfml.exe
