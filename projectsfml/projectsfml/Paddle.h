@@ -4,16 +4,17 @@
 
 class Paddle {
 	sf::RectangleShape rectangle;
-	float rect_velocity;
-	int score;
-public:
-	Paddle();
-	~Paddle();
+	sf::Vector2f position;
+	float speed = 0.3f;
 
-	void increment_score() {	score++; }
-	int get_score() {	return score; };
-	void draw(sf::RenderWindow& window);
-	sf::RectangleShape get_rect();
+public:
+	Paddle(float x, float y);
+	~Paddle();
+	
+	sf::FloatRect getPosition();
+	sf::RectangleShape getShape();
+	void moveLeft();
+	void moveRight();
 	void update();
 
 };

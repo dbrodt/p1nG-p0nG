@@ -1,55 +1,54 @@
 #include "Paddle.h"
 
-Paddle::Paddle(sf::RenderWindow* window, int player) {
-	this->score = 0;
-	this->y = 300;
-	this->player = player;
-	
-	this->window = window;
-	this->rectangle.setSize(sf::Vector2f(10, 100));
+Paddle::Paddle(int _width, int _height)
+{
+    SetSize(_width, _height);
 
-	this->rectangle.setOrigin(5, 50);
-
-	if (this->player == 1) {
-		this->rectangle.setPosition(25, this->y);
-	}
-	else {
-		this->rectangle.setPosition(775, this->y);
-	}
+    m_score = 0;
 }
 
+void Paddle::Update()
+{
+    // to add paddle control in Update() for both paddles
+}
 
-void Paddle::update(float y, unsigned int windowHeight) {
-	if (this->player == 1) {
-		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up)) {
+// paddle collision
+void Paddle::UpdatePositionY(sf::RenderWindow* _window, float _val)
+{
+    int window_y = _window->getSize().y;
 
-			if (get_y().y <= 0)
-			{
-				return;
-			}
-			rectangle.move(0, -y);
-		}
-		else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down)) {
-			if (get_y().y + get_size().y >= windowHeight)
-			{
-				return;
-			}
-			rectangle.move(0, y);
-		}
-	}
-	else {
-		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up)) {
+    // if y + value > maximum y down - the height of the paddle
+    if (GetPositionY() + _val > window_y - GetHeight()) // down collision
+    {
+        return;
+    }
+    // if y + value < minimum y up
+    if (GetPositionY() + _val < 0) // up collision
+        {
+            return;
+        }
 
-			if (get_y().y <= 0)
-			{
-				return;
-			}
-			rectangle.move(0, -y);
-		}
-		if (get_y().y + get_size().y >= windowHeight)
-		{
-			return;
-		}
-		rectangle.move(0, y);
-	}
-};
+    else AddPositionY(_val);
+}
+
+float Paddle::PaddleOneControl()
+{
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::W))
+        return PADDLE_VELOCITY_DOWN;
+
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::S))
+        return PADDLE_VELOCITY_UP;
+
+    return 0;
+}
+
+float Paddle::PaddleTwoControl()
+{
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::O))
+        return PADDLE_VELOCITY_DOWN;
+
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::L))
+        return PADDLE_VELOCITY_UP;
+
+    return 0;
+}

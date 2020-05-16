@@ -144,11 +144,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Main.cpp" />
-    <ClCompile Include="Paddle.cpp" />
+    <ClCompile Include="..\..\..\pong\Ball.cpp" />
+    <ClCompile Include="..\..\..\pong\Graphics.cpp" />
+    <ClCompile Include="..\..\..\pong\Paddle.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Paddle.h" />
+    <ClInclude Include="..\..\..\pong\Ball.h" />
+    <ClInclude Include="..\..\..\pong\Graphics.h" />
+    <ClInclude Include="..\..\..\pong\Paddle.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

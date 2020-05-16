@@ -1,1 +1,9 @@
-﻿  projectsfml.vcxproj -> C:\Users\HP\Desktop\project\p1nG-p0nG\projectsfml\Debug\projectsfml.exe
+﻿  Ball.cpp
+c1xx : fatal error C1083: Не удается открыть файл источник: ..\..\..\pong\Ball.cpp: No such file or directory,
+  Graphics.cpp
+c1xx : fatal error C1083: Не удается открыть файл источник: ..\..\..\pong\Graphics.cpp: No such file or directory,
+  Paddle.cpp
+c1xx : fatal error C1083: Не удается открыть файл источник: ..\..\..\pong\Paddle.cpp: No such file or directory,
+  main.cpp
+C:\Users\HP\Desktop\project\p1nG-p0nG\projectsfml\projectsfml\main.cpp(2,10): fatal error C1083: Не удается открыть файл включение: Graphics.h: No such file or directory,
+  Создание кода...

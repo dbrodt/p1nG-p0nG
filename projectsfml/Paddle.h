@@ -1,22 +1,48 @@
+
 #pragma once
+
 #include <SFML/Graphics.hpp>
 
+const int PADDLE_VELOCITY_UP = 40;
+const int PADDLE_VELOCITY_DOWN = -40;
 
-class Paddle {
-	sf::RenderWindow* window; // „T„{„p„x„p„„„u„|„Ž „~„p „€„{„~„€, „~„…„w„u„~ „t„|„‘ „€„„„‚„y„ƒ„€„r„{„y
-	sf::RectangleShape rectangle; // „R„€„q„ƒ„„„r„u„~„~„€, „ƒ„p„}„p „‚„p„{„u„„„{„p
-	float y; // „K„€„€„‚„t„y„~„p„„„p y „‚„p„{„u„„„{„y (x „}„ „x„p„t„p„u„} „r „{„€„t„u)
-	int player; // „N„€„}„u„‚ „y„s„‚„€„{„p (1 „y„|„y 2)
-	int score;
-public:
-	Paddle(sf::RenderWindow* window, int player);
-	~Paddle() {};
-	void increment_score() {	score++; }
-	int get_score() {	return score; };
-	void draw() {	this->window->draw(this->rectangle); }
-	void set_position(int x, int y) {rectangle.setPosition(x, y);}
-	sf::Vector2f get_size(){return sf::Vector2f(	rectangle.getLocalBounds().width, rectangle.getLocalBounds().height);}
-	sf::Vector2f get_y(){	return rectangle.getPosition();}
-	void update(float y, unsigned int windowHeight);
+class Paddle
+{
+    public:
+        Paddle(int _width, int _height);
+        void Update();
 
+        float GetPositionX() { return m_position.x; };
+        float GetPositionY() { return m_position.y; };
+        //void UpdatePositionX(float _val) { m_position.x += _val; } // unused
+        void UpdatePositionY(sf::RenderWindow* _window, float _val); // { m_position.y += _val; }
+        void AddPositionY(float _val) { m_position.y += _val; }
+        sf::Vector2<float> GetPositionVector() { return m_position; }
+        float GetWidth() { return m_width; }
+        float GetHeight() { return m_height; }
+
+        void AddScore() { ++m_score; }
+        int GetScore() { return m_score; }
+
+        float PaddleOneControl();
+        float PaddleTwoControl();
+
+        void SetPosition(float x, float y)
+        {
+            m_position.x = x;
+            m_position.y = y;
+        }
+
+        void SetSize(int _width, int _height)
+        {
+            m_width = _width;
+            m_height = _height;
+        }
+
+    private:
+        sf::Vector2<float> m_position;
+        int m_width;
+        int m_height;
+        int m_score;
 };
+
