@@ -120,15 +120,15 @@ I need no inheritance and polymorphism in the program, because all classes are d
 
 This tests the display of the menu and ability to select play or exit. Menu passed its test.
 
-1) Drawing objects and score table:
+2) Drawing objects and score table:
 
 This test verifies that the paddles, the ball, and the score table is precisely at given positions with the given attributes (length, radius, and etc.).
 
-1) Paddle and Ball movement
+3) Paddle and Ball movement
 
 This test checks the speed and boundary collision. The ball should ricochet of the top and bottom walls at the angle equal to the incident angle. Same with paddles, but different coordinate.
 
-1) Checking for exiting the game
+4) Checking for exiting the game
 
 This test is meant to verify the load and save of the highscore on condition to exit the game. If the score is higher than highscore, it becomes a new highscore and saves into the txt file.
 
