@@ -46,26 +46,28 @@ There are four classes in total, but two of the are external library heavy: Grap
 
 Class Paddle has 4 private attributes: 
 
-` 
+```
 sf::Vector2<float> m\_position;
-`
+```
 
 this type works as a mathematical vector that stores values of x and y, unlike std::vector.
 
 The rest are self-explanatory
 
-`int m\_width;			
+```
+int m\_width;			
 
- int m\_height;
+int m\_height;
 
- int m\_score;`
-
+int m\_score;
+```
 ![](004.png)
 
-`const int PADDLE\_VELOCITY\_UP = 40;
+```
+const int PADDLE\_VELOCITY\_UP = 40;
 
-const int PADDLE\_VELOCITY\_DOWN = -40;`
-
+const int PADDLE\_VELOCITY\_DOWN = -40;
+```
 The methods here are very straightforward. The only part that is confusing is with the axis and coordination. Origin is in the top left of the screen, so it is (0,0) and bottom right is (1920,1080). Also update() is for drawing graphics.
 
 
@@ -78,19 +80,19 @@ Next is a Ball class with such private attributes:
 
 Velocity depends on x and y velocities.
 
-` 
+```
 sf::Vector2<float> m\_position;
 
 sf::Vector2<float> m\_velocity;
 
 int m\_radius; 
-`
+```
 
 ![](005.png)
 
-`
+```
 Update(Paddle\*, Paddle\*, int)
-`
+```
 
 It is a collision manager: if it hits top or bottom then invert y velocity, if it hits left or right paddle invert x velocity.
 
