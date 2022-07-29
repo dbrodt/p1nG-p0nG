@@ -12,11 +12,17 @@ Before the reset, the menu is displayed with three options: play, options, exit.
 ![](001.png)
 
 
-![](001.png)After the play button is pushed, the game starts.
+![](001.png)
 
-Initial score is 0-0, then the game plays as it should till the user decides to exit the game via ESC key and Exit button. Controls are W, S for left paddle and O, L for right paddle.![](001.png)
+After the play button is pushed, the game starts.
 
-![](001.png)![](002.png)
+Initial score is 0-0, then the game plays as it should till the user decides to exit the game via ESC key and Exit button. Controls are W, S for left paddle and O, L for right paddle.
+
+![](001.png)
+
+![](001.png)
+
+![](002.png)
 
 When we exit the program, it displays the score and highscore. In this example if it gets more than 10 then it congratulates the user.
 
@@ -32,7 +38,7 @@ When we exit the program, it displays the score and highscore. In this example i
 
 **Chapter 2**. Solution design
 
-![](Aspose.Words.79957ed5-6130-4fc1-b680-11306a5970b5.003.png)
+![](003.png)
 
 **Chapter 3. Solution**
 
@@ -52,7 +58,7 @@ int m\_width;
 
 `        `int m\_score;
 
-![](Aspose.Words.79957ed5-6130-4fc1-b680-11306a5970b5.004.png)
+![](004.png)
 
 const int PADDLE\_VELOCITY\_UP = 40;
 
@@ -76,7 +82,7 @@ sf::Vector2<float> m\_velocity;
 
 int m\_radius;
 
-![](Aspose.Words.79957ed5-6130-4fc1-b680-11306a5970b5.005.png)
+![](005.png)
 
 Update(Paddle\*, Paddle\*, int)
 
@@ -86,14 +92,14 @@ Rest is in main:
 
 The most interesting part is in the case of exiting the game: file handling and exception management. When we want to load the highscore to compare with the current score we load the value from txt file, but what if it did not exist before calling it? As we can see it loads a negative value.
 
-![](Aspose.Words.79957ed5-6130-4fc1-b680-11306a5970b5.006.png)
+![](006.png)
 
 
 
 
 We need to set the value to 0.
 
-![](Aspose.Words.79957ed5-6130-4fc1-b680-11306a5970b5.007.png)
+![](007.png)
 
 In case of file handling we try to load the file and withdraw the value from it. Then compare it with the user’s score: if it is larger than user’s then it stays the same; otherwise, it stores the user’s score in the txt file as a highscore, and we successfully close it.
 
