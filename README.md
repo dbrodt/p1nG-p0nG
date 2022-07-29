@@ -140,5 +140,5 @@ This test checks the speed and boundary collision. The ball should ricochet of t
 
 This test is meant to verify the load and save of the highscore on condition to exit the game. If the score is higher than highscore, it becomes a new highscore and saves into the txt file.
 
-In conclusion, all the tests verified the requirements. Everything is successful.
+In conclusion, all the tests verified the requirements. Everything was successful.
 
