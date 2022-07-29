@@ -1,4 +1,4 @@
-﻿**Chapter 1.** Problem statement and the task. The goal of the game is to hit the ball in the way that an opponent cannot hit it back and the ball goes beyond the end of the opponent’s zone. In this game there is no end, but users can exit the game through the menu on ESC button. Requirements for the application:
+**Chapter 1.** Problem statement and the task. The goal of the game is to hit the ball in the way that an opponent cannot hit it back and the ball goes beyond the end of the opponent’s zone. In this game there is no end, but users can exit the game through the menu on ESC button. Requirements for the application:
 
 1) be a multiplatform application, because it uses SFML library that supports this feature;
 1) show the user a menu so that he can choose to play or exit the game;
