@@ -9,14 +9,14 @@
 
 Before the reset, the menu is displayed with three options: play, options, exit. Option “options” should have included the possibility to change characteristics of paddles and a ball: their dimensions, position, and velocity. However, in this program you can only change it manually through constants in headers. (Chosen option highlighted in gray)
 
-![](Aspose.Words.79957ed5-6130-4fc1-b680-11306a5970b5.001.png)
+![](001.png)
 
 
-![](Aspose.Words.79957ed5-6130-4fc1-b680-11306a5970b5.001.png)After the play button is pushed, the game starts.
+![](001.png)After the play button is pushed, the game starts.
 
-Initial score is 0-0, then the game plays as it should till the user decides to exit the game via ESC key and Exit button. Controls are W, S for left paddle and O, L for right paddle.![](Aspose.Words.79957ed5-6130-4fc1-b680-11306a5970b5.001.png)
+Initial score is 0-0, then the game plays as it should till the user decides to exit the game via ESC key and Exit button. Controls are W, S for left paddle and O, L for right paddle.![](001.png)
 
-![](Aspose.Words.79957ed5-6130-4fc1-b680-11306a5970b5.001.png)![](Aspose.Words.79957ed5-6130-4fc1-b680-11306a5970b5.002.png)
+![](001.png)![](002.png)
 
 When we exit the program, it displays the score and highscore. In this example if it gets more than 10 then it congratulates the user.
 
