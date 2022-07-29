@@ -1,13 +1,13 @@
 **Chapter 1.** Problem statement and the task. The goal of the game is to hit the ball in the way that an opponent cannot hit it back and the ball goes beyond the end of the opponent’s zone. In this game there is no end, but users can exit the game through the menu on ESC button. Requirements for the application:
 
 1) be a multiplatform application, because it uses SFML library that supports this feature;
-1) show the user a menu so that he can choose to play or exit the game;
-1) the ball shall ricochet off the court bounds with an angle equal to the incident angle. If the ball hits the paddle, it shall bounce with angle based on the point of impact;
-1) if a player misses a ball, his opponent shall be awarded one point;
-1) show the score board;
-1) when user decides to exit the game show the scores, and if it is the highest score then store it in the text file.	
+2) show the user a menu so that they can choose to play or exit the game;
+3) the ball will ricochet off the court bounds with an angle equal to the incident angle. If the ball hits the paddle, it will bounce with an angle based on the point of impact;
+4) if a player misses a ball, their opponent will be awarded with one point;
+5) show the score board;
+6) when user decides to exit, the game show the scores, and if it is the highest score then store it in the text file.	
 
-Before the reset, the menu is displayed with three options: play, options, exit. Option “options” should have included the possibility to change characteristics of paddles and a ball: their dimensions, position, and velocity. However, in this program you can only change it manually through constants in headers. (Chosen option highlighted in gray)
+Before the reset, the menu is displayed with three options: play, options, exit. Option “options” should have included the possibility to change characteristics of paddles and a ball: their dimensions, position, and velocity. However, in this program you can only change it manually through constants in headers. (Chosen option is highlighted in gray)
 
 ![](001.png)
 
