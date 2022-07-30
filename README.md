@@ -29,8 +29,6 @@ After the play button is pushed, the game starts.
 
 Initial score is 0-0, then the game plays as it should till the user decides to exit the game via ESC key and Exit button. Controls are W, S for left paddle and O, L for right paddle.
 
-![](001.png)
-
 ![](002.png)
 
 When we exit the program, it displays the score and highscore. In this example if it gets more than 10, then it congratulates the user.
