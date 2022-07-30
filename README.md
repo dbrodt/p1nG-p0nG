@@ -25,14 +25,9 @@ Before the reset, the menu is displayed with three options: play, options, exit.
 
 ![](001.png)
 
-
-![](001.png)
-
 After the play button is pushed, the game starts.
 
 Initial score is 0-0, then the game plays as it should till the user decides to exit the game via ESC key and Exit button. Controls are W, S for left paddle and O, L for right paddle.
-
-![](001.png)
 
 ![](001.png)
 
