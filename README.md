@@ -1,8 +1,8 @@
 **Chapter 1.** Problem statement and the task. The goal of the game is to hit the ball in the way that an opponent cannot hit it back and the ball goes beyond the end of the opponent’s zone. In this game there is no end, but users can exit the game through the menu on ESC button. Requirements for the application:
 
 1) Be a multiplatform application, because it uses SFML library that supports this feature;
-2) Show the user a menu so that they can choose to play or exit the game;
-3) The ball will ricochet off the court bounds with an angle equal to the incident angle. If the ball hits the paddle, it will bounce with an angle based on the point of impact;
+2) Show the user a menu, so that they can choose to play or exit the game;
+3) The ball will ricochet off the court bounds with an angle equal to the incident angle. If the ball hits the paddle, it will bounce off with an angle based on the point of impact;
 4) If a player misses a ball, their opponent will be awarded with one point;
 5) Show the score board;
 6) When user decides to exit, the game show the scores, and if it is the highest score then store it in the text file.	
@@ -24,7 +24,7 @@ Initial score is 0-0, then the game plays as it should till the user decides to 
 
 ![](002.png)
 
-When we exit the program, it displays the score and highscore. In this example if it gets more than 10 then it congratulates the user.
+When we exit the program, it displays the score and highscore. In this example if it gets more than 10, then it congratulates the user.
 
 
 
