@@ -1,11 +1,11 @@
 ## Table of Contents
 
-1. [Task](#chapter 1)
-2. [Design](#chapter 2)  
-3. [Solution](#chapter 3)
-4. [References](#chapter 4)  
-5. [Changes](#chapter 5)
-6. [Testing](#chapter 6)
+1. [Task](#Chapter 1)
+2. [Design](#Chapter 2)  
+3. [Solution](#Chapter 3)
+4. [References](#Chapter 4)  
+5. [Changes](#Chapter 5)
+6. [Testing](#Chapter 6)
 
 ## Chapter 1.  
 The goal of the game is to hit the ball in the way that an opponent cannot hit it back and the ball goes beyond the end of the opponent’s zone. In this game there is no end, but users can exit the game through the menu on ESC button. Requirements for the application:
