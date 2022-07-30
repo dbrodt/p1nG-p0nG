@@ -46,11 +46,13 @@ When we exit the program, it displays the score and highscore. In this example i
 
 
 
-## Chapter 2. Solution design
+## Chapter 2.
+### Solution design
 
 ![](003.png)
 
-## Chapter 3. Solution
+## Chapter 3.
+### Solution
 
 There are four classes in total, but two of the are external library heavy: Graphics and Menu.
 
@@ -122,17 +124,20 @@ We need to set the value to 0.
 In case of file handling we try to load the file and withdraw the value from it. Then compare it with the user’s score: if it is larger than user’s then it stays the same; otherwise, it stores the user’s score in the txt file as a highscore, and we successfully close it.
 
 
-## Chapter 4. External Solutions
+## Chapter 4.
+### External Solutions
 
 I used external sources mainly for sfml library. For example, [how to create basic menu class:](https://www.youtube.com/watch?v=4Vg9d1pjL20)
 
 Or how to change resolution (resize it).
 
-## Chapter 5. Changes from the “Project Application Form”
+## Chapter 5.
+### Changes from the “Project Application Form”
 
 I need no inheritance and polymorphism in the program, because all classes are distinct.
 
-## Chapter 6. Testing:
+## Chapter 6.
+### Testing:
 
 1) Drawing the menu and check selection.
 
