@@ -1,13 +1,13 @@
 ## Table of Contents
 
-1. [Task](#Chapter-1)
-2. [Design](#Chapter-2)  
-3. [Solution](#Chapter-3)
-4. [References](#Chapter-4)  
-5. [Changes](#Chapter-5)
-6. [Testing](#Chapter-6)
+1. [Task](#task)
+2. [Design](#design)  
+3. [Solution](#solution)
+4. [Changes](#changes)
+5. [Testing](#testing)
+6. [References](#references)  
 
-## Chapter 1.  
+## Task.  
 The goal of the game is to hit the ball in the way that an opponent cannot hit it back and the ball goes beyond the end of the opponent’s zone. In this game there is no end, but users can exit the game through the menu on ESC button. Requirements for the application:
 
 1) Be a multiplatform application, because it uses SFML library that supports this feature;
@@ -46,13 +46,13 @@ When we exit the program, it displays the score and highscore. In this example i
 
 
 
-## Chapter 2.
-### Solution design
+## Design.
+
 
 ![](003.png)
 
-## Chapter 3.
-### Solution
+## Solution.
+ 
 
 There are four classes in total, but two of the are external library heavy: Graphics and Menu.
 
@@ -124,20 +124,11 @@ We need to set the value to 0.
 In case of file handling we try to load the file and withdraw the value from it. Then compare it with the user’s score: if it is larger than user’s then it stays the same; otherwise, it stores the user’s score in the txt file as a highscore, and we successfully close it.
 
 
-## Chapter 4.
-### External Solutions
-
-I used external sources mainly for sfml library. For example, [how to create basic menu class:](https://www.youtube.com/watch?v=4Vg9d1pjL20)
-
-Or how to change resolution (resize it).
-
-## Chapter 5.
-### Changes from the “Project Application Form”
+## Changes
 
 I need no inheritance and polymorphism in the program, because all classes are distinct.
 
-## Chapter 6.
-### Testing:
+## Testing:
 
 1) Drawing the menu and check selection.
 
@@ -157,3 +148,9 @@ This test is meant to verify the load and save of the highscore on condition to 
 
 In conclusion, all the tests verified the requirements. Everything was successful.
 
+
+## References
+
+I used external sources mainly for sfml library. For example, [how to create basic menu class:](https://www.youtube.com/watch?v=4Vg9d1pjL20)
+
+Or how to change resolution (resize it).
