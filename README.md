@@ -14,7 +14,7 @@ The goal of the game is to hit the ball in the way that an opponent cannot hit i
 5. [Testing](#testing)
 6. [References](#references)  
 
-## Task.  
+## Task 
 Requirements for the application:
 
 1) Be a multiplatform application, because it uses SFML library that supports this feature;
@@ -46,12 +46,12 @@ When we exit the program, it displays the score and highscore. In this example i
 
 
 
-## Design.
+## Design
 
 
 ![](003.png)
 
-## Solution.
+## Solution
  
 
 There are four classes in total, but two of the are external library heavy: Graphics and Menu.
